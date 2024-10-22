@@ -1,5 +1,5 @@
 'use client'
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { useState, useEffect } from 'react'
  
 function dataCollection() {
@@ -24,24 +24,11 @@ function dataCollection() {
   );
 
   function Item({item} : {item:any}) {
-    const [showInfo, setShowInfo] = useState(false);
-    const visible = showInfo;
-
-    const Conditional = ({
-      showWhen,
-      children,
-    }: {
-      showWhen: Boolean;
-      children: ReactNode;
-    }) => {
-      if(showWhen) return <>{children}</>;
-      return <></>;
-    };
+    const [showInfo, setShowInfo] = useState();
   
     const onClickHandle = () => {
-      <Conditional showWhen={visible}>
-        {showInfo}
-      </Conditional>
+      console.log("click")
+      setShowInfo(showInfo);
     };
   
     return (
