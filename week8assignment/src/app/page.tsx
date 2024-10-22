@@ -37,6 +37,7 @@ function dataCollection() {
     return (
       <>
       <div>
+        <h1>Learn About My Favorite Media</h1>
         <button onClick={() => returnData(0)}>{Names[0]}</button>
         <button onClick={() => returnData(1)}>{Names[1]}</button>
         <button onClick={() => returnData(2)}>{Names[2]}</button>
