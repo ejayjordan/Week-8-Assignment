@@ -1,0 +1,32 @@
+{
+    "Scream": {
+        "media": "movie",
+        "genre": "horror",
+        "year": "1996"
+    },
+
+    "The Great": {
+        "media": "tv show",
+        "genre": "comedy",
+        "year": "2020"
+    },
+
+    "Bojack Horseman": {
+        "media": "tv show",
+        "genre": "sitcom",
+        "year": "2014"
+    },
+
+    "Moral Orel": {
+        "media": "tv show",
+        "genre": "drama",
+        "year": "2005"
+    },
+
+    "My Little Pony: FiM": {
+        "media": "tv show",
+        "genre": "adventure",
+        "year": "2010"
+    }
+
+}
