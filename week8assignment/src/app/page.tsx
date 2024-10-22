@@ -1,10 +1,12 @@
+'use client'
+import React from 'react'
 import { useState, useEffect } from 'react'
  
 function dataCollection() {
   const [data, setData] = useState(null)
  
   useEffect(() => {
-    fetch('/data.json')
+    fetch('public\data.json')
       .then((res) => res.json())
       .then((data) => {
         setData(data)
@@ -15,7 +17,8 @@ function dataCollection() {
  
   return (
     <div>
-      <p>{data}</p>
+      {data}
     </div>
   )
 }
+export default dataCollection;
